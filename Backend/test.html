@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+</head>
+<body>
+	<button onclick="clic()	">GET request</button>
+	<script type="text/javascript">
+		function clic() {
+			axios({
+					method: 'get',
+					url: 'http://jsonplaceholder.typicode.com/todos'
+				})
+				.then(res => console.log(res))
+				.then(err => console.log(err));
+		}
+	</script>
+</body>
+</html>

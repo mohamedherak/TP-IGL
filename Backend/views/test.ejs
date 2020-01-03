@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            TEST
+        </title>
+    </head>
+<body>
+    <h1>Test des routes </h1>
+    <form action="/api/enseignants/new" method="post">
+        <input name="nom" placeholder="Nom enseignant">
+        <input name="prenom" placeholder="Prenom enseignant">
+        <input name="matricule" placeholder="Matricule enseignant">
+        <input type="submit">
+    </form>
+    <form action="/api/etudiants/new" method="post">
+        <input name="nom" placeholder="Nom etudiant">
+        <input name="prenom" placeholder="Prenom etudiant">
+        <input name="matricule" placeholder="Matricule etudiant">
+        <input type="submit">
+    </form>
+    <form action="/api/enseignants/3/delete?_method=DELETE" method="POST">
+        <input type="submit">Supression de l'enseignant de matricule 3 pour le test
+    </form>
+    <form action="/api/etudiants/160015/delete?_method=DELETE" method="POST">
+        <input type="submit">Supression de l'etudiant de matricule 160015 pour le test
+    </form>
+</body>
+</html>
